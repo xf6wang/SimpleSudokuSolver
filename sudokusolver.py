@@ -1,4 +1,3 @@
-import copy
 matrix = [ [0, 8, 4, 0, 0, 0, 2, 6, 0],                                                                                                                               
            [0, 0, 1, 0, 8, 2, 0, 0, 0],                                                                                                                                                   
            [0, 0, 0, 0, 0, 9, 0, 0, 0],                                                                                                                               
@@ -52,6 +51,10 @@ def Solve(matrix):
                matrix[location[0]][location[1]] = 0
        return False
 
-print(matrix)
+def printMatrix(matrix):
+    for x in range(9):
+        print(matrix[x])
+
+printMatrix(matrix)
 Solve(matrix)
-print(matrix)
+printMatrix(matrix)
